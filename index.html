@@ -4,120 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      * {
-        margin:0;
-        padding:0;
-      }
-      a:link, a:visited, a:hover, a:active {
-        color:rgb(179, 179, 179);
-        font-size:16px;
-      }  
-      body {
-        background:#0059be;
-        font-family:verdana;
-      }
-      h1 {
-        color:#c0c;
-        font-size:24px;
-      }
-      p {
-        font-size:15px;
-      }
-      ul {
-        list-style-type:none;
-      }
-      #cabecera {
-        color:#eee;
-        background-color:#06098dd8;
-        padding:10px
-      }
-      #contenedor {
-        margin:0 auto;
-        width:800px;
-      }
-      #contenido {
-        background-color:#ddd;
-        float:left;
-        height:500px;
-        padding:10px;
-        width:570px;
-      }
-      #menu {
-        background-color:#1e355fd2;
-        float:left;
-        height:480px;
-        padding:20px;
-        width:170px;
-      }
-      #pie {
-        background-color:#142129;
-        clear:botch;
-        color:#eee;
-        padding:15px;
-        text-align:center;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="contenedor">
-    <div id="cabecera">
-        <p><h4><i>"HOLA MUNDO" ESTA ES MI PAGINA</i></h4></p>
+    <img src="imagen.png" class="img-01" alt="">
+    <img src="imagen2.png" class="img-02" alt="">
+    <div class="formulario">
+        <h1>Inicio de sesion</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" required>
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="username">
+                <input type="password" required>
+                <label>Contraseña</label>
+
+            </div>
+            <div class="recordar">¿Olvido su contraseña?</div>
+            <input type="submit" value="iniciar">
+                        
+            <div class="registrarse">
+                <a href="#">Registrarse</a>
+            </div>
+        </form>
     </div>
-    <div id="menu">
-        <ul>
-            <p><strong><i>Sitios Web</i></strong></p>
-            <hr>
-            <li><a href="http://Youtube.com">Youtube</a></li>
-            <li><a href="http://Facebook.com">Facebook</a></li>
-            <li><a href="http://Google.com">Google</a></li>
-        </ul>
-        <ul><br>
-            <p><strong><i>Juegos Online</i></strong></p>
-            <hr>
-            <li><a href="http://Poki.com">Poki</a></li>
-            <li><a href="http://1001juegos.com">1001juegos</a></li>
-            <li><a href="http://Juegos.com">Juegos</a></li>
-        </ul>
-        <br>
-        <iframe width="170" 
-                height="135" 
-                src="https://www.youtube.com/embed/TuPCx2GllD4?si=raPSUozARBPtYB6Z" 
-                title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
-        <br>
-        <br>
-        <iframe width="170" 
-                height="135" 
-                src="https://www.youtube.com/embed/PlpM2LJWu-s?si=Ao0O9o4zyUUlhwII" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture; web-share" 
-                allowfullscreen></iframe>
-    </div>
-    <div id="contenido">
-        <h1><center><i>Cristhian C. Mamani</i></center></h1>
-        <p><center>28/05/2004</center></p>
-        <br>
-        <center><img src="yo.png.jpg" width="230" height="230"></center>
-        <br>
-        <p>!Hola!como estas.</p>
-        <p>Bienvenido a mi programa.</p>
-        <p>Soy el Univ. Cristhian C. Mamani de la <strong style="color:rgb(8, 37, 73)">FCPN - Informatica</strong>
-          este programa se hizo con la finalidad de que se facilite las cosas
-          de trabajo y de estudio.Para ello podemos observar en el MENU que hay una seccion
-          de sitio web para navegar y juegos online para divertirse.</p><br>
-        <p>Tambien encontraras un video donde observaremos lo grandioso que 
-          es estudiar <strong style="color:rgb(8, 37, 73)">INFORMATICA</strong>.
-          Tambien un video <strong style="color:rgb(8, 37, 73)">ASMR</strong> de programacion.</p>
-    </div>
-    <div id="pie">
-        <p>Facultad de Ciencas Puras y Naturales - Informatica </p>
-        <p><h6>INF - 113</h6></p>
-    </div>
-  </div>     
+    <footer>
+        <div style="background-color: #142129; color: #fff; text-align: center;padding: 1px;">
+            <p>Facultad de Ciencias Puras y Narurales</p><p>INF-113</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
